@@ -1,0 +1,57 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .background {
+    background-image: url('kungfu_panda_image.jpg'); /* Cambiar 'leo-background.jpg' por la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .content {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .party-name {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .jungle-text {
+    font-family: 'Comic Sans MS', cursive; /* Fuente estilo selva */
+    color: #3b6f35; /* Color de texto verde oscuro */
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .invitation-text {
+    margin: 15px 0;
+  }
+  
+  .map-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .map-link:hover {
+    background-color: #2980b9;
+  }
+  
