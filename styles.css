@@ -4,6 +4,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #000000;
 }
 
 .container {
@@ -93,4 +94,61 @@ a:hover {
     width: 48%; /* Ajustar el ancho de las mitades en pantallas más grandes */
     max-width: none; /* Anular el ancho máximo */
   }
+}
+
+.overlay {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease-in-out;
+}
+
+.overlay:hover {
+  transform: scale(1.05);
+}
+
+.text {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px; /* Modifica el valor de padding para reducir el tamaño del recuadro */
+  border-radius: 5px;
+}
+
+.overlay:hover .text {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+/* Estilos de letras para Leo */
+.leo .text h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  /* Utilizando una fuente de "Jungle" para Leo */
+  font-family: 'Comic Sans MS', cursive;
+  color: #3b6f35; /* Color verde oscuro */
+}
+
+/* Estilos de letras para Jesús */
+.jesus .text h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  /* Utilizando un estilo de letras de galaxia neon para Jesús */
+  /* Efecto de letras en tonos de galaxia neon */
+  font-family: 'Verdana', sans-serif;
+  color: #ff00ff; /* Color rosa brillante */
+  text-shadow: 0 0 10px #00ffff; /* Sombra de texto en tonos azules */
+}
+
+/* Texto "Hola! Te invito a mi cumpleaños" */
+.text p {
+  margin: 0px 0;
+  font-size: 18px;
+  color: #000000; /* Color del texto */
 }
